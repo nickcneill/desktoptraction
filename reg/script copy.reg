@@ -1,0 +1,95 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\ContextMenus]
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction]
+"Version"="script"
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell]
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\1date]
+"MUIVerb"="Prepend Date"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\1date\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe -d \"%1\""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\2word]
+"MUIVerb"="Prepend Word"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\2word\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe -w \"%1\""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\3both]
+"MUIVerb"="Prepend Both"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\3both\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe -b \"%1\""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\4interactive]
+"MUIVerb"="Interactive"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\4interactive\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe"
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\5export]
+"MUIVerb"="Export Modified Dates"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\5export\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe --eMod"
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\6import]
+"MUIVerb"="Import Modified Dates"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\MenuDesktopTraction\shell\6import\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe --iMod"
+
+[HKEY_CLASSES_ROOT\*\shell\date]
+"Extended"=""
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"HasLUAShield"=""
+"MUIVerb"="Prepend Date"
+
+[HKEY_CLASSES_ROOT\*\shell\date\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe -d \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\MenuFileUtil]
+"MUIVerb"="File Util"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"ExtendedSubCommandsKey"="*\\ContextMenus\\MenuDesktopTraction"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\fileutil]
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuDesktopTraction"
+"MUIVerb"="File Util"
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuDesktopTraction]
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuDesktopTraction\shell]
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuDesktopTraction\shell\1export]
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"MUIVerb"="Export Modified Date"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuDesktopTraction\shell\1export\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe -e \"%2\""
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuDesktopTraction\shell\2import]
+"Icon"="\"C:\\Program Files\\Desktop Traction\\fileutil.exe\""
+"MUIVerb"="Import Modified Date"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuDesktopTraction\shell\2import\command]
+@="C:\\Program Files\\Desktop Traction\\fileutil.exe -i"
